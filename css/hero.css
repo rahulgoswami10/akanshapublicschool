@@ -1669,30 +1669,30 @@ Responsive
     }
 
     .tabs{
-
-        justify-content:flex-start;
-
+        /* justify-content:flex-start; */
+        justify-content:center;
         overflow-x:auto;
-
         padding-bottom:15px;
-
         gap:12px;
-
     }
 
     .tabs::-webkit-scrollbar{
-
         display:none;
-
     }
 
     .tab-btn{
-
         white-space:nowrap;
-
         font-size:18px;
-
         padding:13px 22px;
+
+    }
+
+    .tab-content-wrapper{
+
+        /* grid-template-columns:1fr;
+        gap:50px; */
+        display: flex;
+        flex-direction: column-reverse;
 
     }
 
