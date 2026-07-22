@@ -1485,12 +1485,58 @@
 
 
     /*==================================== MOBILE MENU ====================================*/
+    // const menuBtn = document.querySelector(".menu-btn");
+    // const menu = document.querySelector(".menu");
+
+    // menuBtn.addEventListener("click",()=>{
+
+    //     menu.classList.toggle("show");
+
+    // });
+
+
+    /*==================================== MOBILE MENU ====================================*/
+
     const menuBtn = document.querySelector(".menu-btn");
     const menu = document.querySelector(".menu");
 
-    menuBtn.addEventListener("click",()=>{
+    menuBtn.addEventListener("click", () => {
 
         menu.classList.toggle("show");
+
+    });
+
+
+    /*==================================== MOBILE DROPDOWN ====================================*/
+
+    const dropdownLinks = document.querySelectorAll(".has-dropdown > a");
+
+    dropdownLinks.forEach(link => {
+
+        link.addEventListener("click", function (e) {
+
+            if (window.innerWidth <= 768) {
+
+                e.preventDefault();
+
+                const parent = this.parentElement;
+
+                // Ek hi dropdown open rahe
+                document.querySelectorAll(".has-dropdown").forEach(item => {
+
+                    if (item !== parent) {
+
+                        item.classList.remove("active");
+
+                    }
+
+                });
+
+                parent.classList.toggle("active");
+
+            }
+
+        });
 
     });
     </script>

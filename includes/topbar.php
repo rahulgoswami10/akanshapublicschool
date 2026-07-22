@@ -4,15 +4,15 @@
         <div class="left">
 
             <i class="fa-solid fa-location"></i>
-            Vill: Darbhanga(via-Nalanda), Bihar, India
+            Vill: Bhadwa Bazar Rafiganj, Aurangabad, Bihar, India
 
             <i class="fa-solid fa-phone"></i>
-            +91 9876543210
+            +91 7464042262
 
             <span>|</span>
             
             <i class="fa-solid fa-envelope"></i>
-            akanshapublicschool@gmail.com
+            akankshapublicschool824122@gmail.com
 
 
         </div>
