@@ -6,14 +6,14 @@
         <!-- nav logo -->
         <div class="logo">
             <!-- <img src="assets/logo.png"> -->
-            <img src="/akanshapublicschool/assets/logo.png">
+            <img src="<?= BASE_URL ?>/assets/logo.png">
             <span>Akanksha Public School</span> 
         </div>
 
         <!-- nav menu links -->
         <ul class="menu">
             <!-- home -->
-            <li><a href="/akanshapublicschool/index.php">Home</a></li>
+            <li><a href="<?= BASE_URL ?>/index.php">Home</a></li>
 
             <!-- about -->
             <li class="has-dropdown">
@@ -21,12 +21,12 @@
 
                 <ul class="dropdown">
 
-                    <li><a href="/akanshapublicschool/about/overview.php">Overview</a></li>
-                    <li><a href="/akanshapublicschool/about/message-from-principal.php">Principal's Message</a></li>
-                    <li><a href="/akanshapublicschool/about/message-from-director.php">Director's Message</a></li>
-                    <li><a href="/akanshapublicschool/about/message-from-trust.php">Trustee's Message</a></li>
-                    <li><a href="/akanshapublicschool/about/vision-and-mission.php">Vision & Mission</a></li>
-                    <li><a href="/akanshapublicschool/about/leadership.php">Our Leadership</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/overview.php">Overview</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/message-from-principal.php">Principal's Message</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/message-from-director.php">Director's Message</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/message-from-trust.php">Trustee's Message</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/vision-and-mission.php">Vision & Mission</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/leadership.php">Our Leadership</a></li>
 
                 </ul>
             </li>
@@ -37,10 +37,10 @@
 
                 <ul class="dropdown">
 
-                    <li><a href="/akanshapublicschool/academics/teachers.php">Our Teachers</a></li>
-                    <li><a href="/akanshapublicschool/academics/values.php">Our Values</a></li>
-                    <li><a href="/akanshapublicschool/academics/classroom.php">Beyond Classroom</a></li>
-                    <li><a href="/akanshapublicschool/academics/curriculum.php">Curriculum</a></li>
+                    <li><a href="<?= BASE_URL ?>/academics/teachers.php">Our Teachers</a></li>
+                    <li><a href="<?= BASE_URL ?>/academics/values.php">Our Values</a></li>
+                    <li><a href="<?= BASE_URL ?>/academics/classroom.php">Beyond Classroom</a></li>
+                    <li><a href="<?= BASE_URL ?>/academics/curriculum.php">Curriculum</a></li>
                     <li><a href="#">Learning Methodology</a></li>
 
                 </ul>

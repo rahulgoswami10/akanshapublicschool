@@ -1,4 +1,7 @@
 <?php
+
+    require_once '../config.php';
+
     $pageTitle = "Mission and Vision | Akanksha Public School";
 ?>
 
@@ -11,7 +14,7 @@
     <?php @include('../includes/header.php'); ?>
 
     <!-- hero css cdn -->
-    <link rel="stylesheet" href="/akanshapublicschool/css/vision-and-mission.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/css/vision-and-mission.css">
 
 
   </head>
@@ -36,7 +39,7 @@
 
         <div class="banner-overlay"></div>
 
-        <img src="/akanshapublicschool/assets/banners/mission-vision.png" alt="Overview Banner">
+        <img src="<?= BASE_URL ?>/assets/banners/mission-vision.png" alt="Overview Banner">
 
         <div class="banner-content container">
 
@@ -46,7 +49,7 @@
 
             <div class="breadcrumb">
 
-                <a href="/akanshapublicschool/index.php">
+                <a href="<?= BASE_URL ?>/index.php">
                     Home
                 </a>
 
@@ -82,7 +85,7 @@
 
             <!-- Left Image -->
             <div class="vision-image">
-                <img src="/akanshapublicschool/assets/vision.png" alt="Director">
+                <img src="<?= BASE_URL ?>/assets/vision.png" alt="Director">
             </div>
 
             <!-- Right Content -->
@@ -127,7 +130,7 @@
 
             <!-- Left Image -->
             <div class="mission-image">
-                <img src="/akanshapublicschool/assets/mission.png" alt="Director">
+                <img src="<?= BASE_URL ?>/assets/mission.png" alt="Director">
             </div>
 
             <!-- Right Content -->
@@ -186,7 +189,7 @@
     <!-- swiper js script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="/akanshapublicschool/js/index.js"></script>
+    <script src="<?= BASE_URL ?>/js/index.js"></script>
 
 
 

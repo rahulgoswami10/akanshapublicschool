@@ -1,4 +1,7 @@
 <?php
+
+    require_once '../config.php';
+
     $pageTitle = "OverView | Akanksha Public School";
 ?>
 
@@ -11,7 +14,7 @@
     <?php @include('../includes/header.php'); ?>
 
     <!-- hero css cdn -->
-    <link rel="stylesheet" href="/akanshapublicschool/css/overview.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/css/overview.css">
 
 
   </head>
@@ -36,7 +39,7 @@
 
         <div class="banner-overlay"></div>
 
-        <img src="/akanshapublicschool/assets/banners/overview-banner.png" alt="Overview Banner">
+        <img src="<?= BASE_URL ?>/assets/banners/overview-banner.png" alt="Overview Banner">
 
         <div class="banner-content container">
 
@@ -46,7 +49,7 @@
 
             <div class="breadcrumb">
 
-                <a href="/akanshapublicschool/index.php">
+                <a href="<?= BASE_URL ?>/index.php">
                     Home
                 </a>
 
@@ -125,7 +128,7 @@
 
                 <div class="overview-image">
 
-                    <img src="/akanshapublicschool/assets/classroom3.jpeg" alt="Overview">
+                    <img src="<?= BASE_URL ?>/assets/classroom3.jpeg" alt="Overview">
 
                 </div>
 
@@ -171,7 +174,7 @@
 
                     <div class="student-image">
 
-                        <img src="/akanshapublicschool/assets/facilities/play_ground.png" alt="Sports">
+                        <img src="<?= BASE_URL ?>/assets/facilities/play_ground.png" alt="Sports">
 
                     </div>
 
@@ -197,7 +200,7 @@
 
                     <div class="student-image">
 
-                        <img src="/akanshapublicschool/assets/facilities/activity_room.png" alt="Events">
+                        <img src="<?= BASE_URL ?>/assets/facilities/activity_room.png" alt="Events">
 
                     </div>
 
@@ -223,7 +226,7 @@
 
                     <div class="student-image">
 
-                        <img src="/akanshapublicschool/assets/facilities/computer_lab.png" alt="Lab">
+                        <img src="<?= BASE_URL ?>/assets/facilities/computer_lab.png" alt="Lab">
 
                     </div>
 
@@ -275,7 +278,7 @@
     <!-- swiper js script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="/akanshapublicschool/js/index.js"></script>
+    <script src="<?= BASE_URL ?>/js/index.js"></script>
 
 
 

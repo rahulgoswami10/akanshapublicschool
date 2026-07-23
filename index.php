@@ -1,4 +1,7 @@
 <?php
+
+    require_once 'config.php';
+
     $pageTitle = "Home | Akanksha Public School";
 ?>
 
@@ -11,7 +14,7 @@
     <?php @include('includes/header.php'); ?>
 
     <!-- hero css cdn -->
-    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/css/hero.css">
 
   </head>
 
@@ -36,8 +39,7 @@
 
             <!-- slide 1 -->
             <div class="slide active">
-                <!-- <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600&auto=format&fit=crop"> -->
-                <img src="assets/prayers/prayer37.jpeg" alt="">
+                <img src="<?= BASE_URL ?>/assets/prayers/prayer37.jpeg" alt="">
 
                 <div class="overlay"></div>
 
@@ -74,7 +76,7 @@
 
             <!-- slide 2 -->
             <div class="slide">
-                <img src="assets/facilities/play_ground.png">
+                <img src="<?= BASE_URL ?>/assets/facilities/play_ground.png">
 
                 <div class="overlay"></div>
 
@@ -93,11 +95,11 @@
 
                         <div class="hero-buttons">
 
-                            <a href="admission.php" class="btn-primary">
+                            <a href="#" class="btn-primary">
                                 Apply Now
                             </a>
 
-                            <a href="about.php" class="btn-secondary">
+                            <a href="#" class="btn-secondary">
                                 Explore Campus <i class="fa-solid fa-arrow-right-long"></i>
                             </a>
 
@@ -110,7 +112,7 @@
 
             <!-- slide 3 -->
             <div class="slide">
-                <img src="assets/facilities/smart_classroom.png">
+                <img src="<?= BASE_URL ?>/assets/facilities/smart_classroom.png">
 
                 <div class="overlay"></div>
 
@@ -129,11 +131,11 @@
 
                         <div class="hero-buttons">
 
-                            <a href="admission.php" class="btn-primary">
+                            <a href="#" class="btn-primary">
                                 Apply Now
                             </a>
 
-                            <a href="about.php" class="btn-secondary">
+                            <a href="#" class="btn-secondary">
                                 Explore Campus<i class="fa-solid fa-arrow-right-long"></i>
                             </a>
 
@@ -298,7 +300,7 @@
         <div class="container about-wrapper">
 
             <div class="about-image">
-                <img src="assets/classroom3.jpeg" alt="">
+                <img src="<?= BASE_URL ?>/assets/classroom3.jpeg" alt="">
             </div>
 
             <div class="about-content">
@@ -442,7 +444,7 @@
 
                     <div class="featured-image">
 
-                        <img src="assets/members/director4.png" alt="Chairman">
+                        <img src="<?= BASE_URL ?>/assets/members/director4.png" alt="Chairman">
 
                     </div>
 
@@ -502,7 +504,7 @@
 
                         <div class="leader-card">
 
-                            <img src="assets/inner-ceo-2.jpg" alt="Vice Principal">
+                            <img src="<?= BASE_URL ?>/assets/inner-ceo-2.jpg" alt="Vice Principal">
 
                             <div class="leader-info">
 
@@ -518,7 +520,7 @@
 
                         <div class="leader-card">
 
-                            <img src="assets/inner-ceo-3.jpg" alt="Director">
+                            <img src="<?= BASE_URL ?>/assets/inner-ceo-3.jpg" alt="Director">
 
                             <div class="leader-info">
 
@@ -616,7 +618,7 @@
 
                     <img
                         id="content-image"
-                        src="assets/classroom3.jpeg"
+                        src="<?= BASE_URL ?>/assets/classroom3.jpeg"
                         alt="Personalised Learning"
                     >
 
@@ -645,7 +647,7 @@
 
                     <a href="#" class="why-card teacher-card">
 
-                        <img src="assets/classroom11.jpeg" alt="Our Teachers">
+                        <img src="<?= BASE_URL ?>/assets/classroom11.jpeg" alt="Our Teachers">
 
                         <div class="overlay"></div>
 
@@ -657,7 +659,7 @@
 
                     <a href="#" class="why-card scholarship-card">
 
-                        <img src="assets/classroom12.jpeg" alt="Scholarships">
+                        <img src="<?= BASE_URL ?>/assets/classroom12.jpeg" alt="Scholarships">
 
                         <div class="overlay"></div>
 
@@ -675,7 +677,7 @@
 
                     <a href="#" class="why-card beyond-card">
 
-                        <img src="assets/classroom13.jpeg" alt="Beyond Classroom">
+                        <img src="<?= BASE_URL ?>/assets/classroom13.jpeg" alt="Beyond Classroom">
 
                         <div class="overlay"></div>
 
@@ -687,7 +689,7 @@
 
                     <a href="#" class="why-card academic-card">
 
-                        <img src="assets/classroom14.jpeg" alt="Academic Excellence">
+                        <img src="<?= BASE_URL ?>/assets/classroom14.jpeg" alt="Academic Excellence">
 
                         <div class="overlay"></div>
 
@@ -705,7 +707,7 @@
 
                     <a href="#" class="why-card values-card">
 
-                        <img src="assets/classroom15.jpeg" alt="Our Values">
+                        <img src="<?= BASE_URL ?>/assets/classroom15.jpeg" alt="Our Values">
 
                         <div class="overlay"></div>
 
@@ -717,7 +719,7 @@
 
                     <a href="#" class="why-card inclusion-card">
 
-                        <img src="assets/classroom16.jpeg" alt="Inclusion">
+                        <img src="<?= BASE_URL ?>/assets/classroom16.jpeg" alt="Inclusion">
 
                         <div class="overlay"></div>
 
@@ -771,7 +773,7 @@
 
                             <a href="#" class="facility-card">
 
-                                <img src="assets/facilities/smart_classroom.png" alt="Modern Classroom">
+                                <img src="<?= BASE_URL ?>/assets/facilities/smart_classroom.png" alt="Modern Classroom">
 
                                 <div class="facility-overlay"></div>
 
@@ -787,7 +789,7 @@
 
                             <a href="#" class="facility-card">
 
-                                <img src="assets/facilities/library.png" alt="Library">
+                                <img src="<?= BASE_URL ?>/assets/facilities/library.png" alt="Library">
 
                                 <div class="facility-overlay"></div>
 
@@ -803,7 +805,7 @@
 
                             <a href="#" class="facility-card">
 
-                                <img src="assets/facilities/computer_lab.png" alt="Computer Lab">
+                                <img src="<?= BASE_URL ?>/assets/facilities/computer_lab.png" alt="Computer Lab">
 
                                 <div class="facility-overlay"></div>    
 
@@ -819,7 +821,7 @@
 
                             <a href="#" class="facility-card">
 
-                                <img src="assets/facilities/sports_ground.png" alt="Sports Ground">
+                                <img src="<?= BASE_URL ?>/assets/facilities/sports_ground.png" alt="Sports Ground">
 
                                 <div class="facility-overlay"></div>
 
@@ -845,7 +847,7 @@
 
                             <a href="#" class="facility-card">
 
-                                <img src="assets/facilities/science_lab.png" alt="Science Lab">
+                                <img src="<?= BASE_URL ?>/assets/facilities/science_lab.png" alt="Science Lab">
 
                                 <div class="facility-overlay"></div>
 
@@ -859,7 +861,7 @@
 
                             <a href="#" class="facility-card">
 
-                                <img src="assets/facilities/smart_classroom.png" alt="Smart Classroom">
+                                <img src="<?= BASE_URL ?>/assets/facilities/smart_classroom.png" alt="Smart Classroom">
 
                                 <div class="facility-overlay"></div>
 
@@ -873,7 +875,7 @@
 
                             <a href="#" class="facility-card">
 
-                                <img src="assets/facilities/playground.png" alt="Playground">
+                                <img src="<?= BASE_URL ?>/assets/facilities/playground.png" alt="Playground">
 
                                 <div class="facility-overlay"></div>
 
@@ -887,7 +889,7 @@
 
                             <a href="#" class="facility-card">
 
-                                <img src="assets/facilities/activity_room.png" alt="Activity Room">
+                                <img src="<?= BASE_URL ?>/assets/facilities/activity_room.png" alt="Activity Room">
 
                                 <div class="facility-overlay"></div>
 
@@ -955,7 +957,7 @@
 
                         <div class="testimonial-header">
 
-                            <img src="assets/unknown_woman.jpg" alt="Parent">
+                            <img src="<?= BASE_URL ?>/assets/unknown_woman.jpg" alt="Parent">
 
                             <div class="testimonial-info">
 
@@ -990,7 +992,7 @@
 
                         <div class="testimonial-header">
 
-                            <img src="assets/unknown_man.jpg" alt="Parent">
+                            <img src="<?= BASE_URL ?>/assets/unknown_man.jpg" alt="Parent">
 
                             <div class="testimonial-info">
 
@@ -1025,7 +1027,7 @@
 
                         <div class="testimonial-header">
 
-                            <img src="assets/unknown_woman.jpg" alt="Parent">
+                            <img src="<?= BASE_URL ?>/assets/unknown_woman.jpg" alt="Parent">
 
                             <div class="testimonial-info">
 
@@ -1060,7 +1062,7 @@
 
                         <div class="testimonial-header">
 
-                            <img src="assets/unknown_man.jpg" alt="Parent">
+                            <img src="<?= BASE_URL ?>/assets/unknown_man.jpg" alt="Parent">
 
                             <div class="testimonial-info">
 
@@ -1095,7 +1097,7 @@
 
                         <div class="testimonial-header">
 
-                            <img src="assets/unknown_woman.jpg" alt="Parent">
+                            <img src="<?= BASE_URL ?>/assets/unknown_woman.jpg" alt="Parent">
 
                             <div class="testimonial-info">
 
@@ -1130,7 +1132,7 @@
 
                         <div class="testimonial-header">
 
-                            <img src="assets/unknown_woman.jpg" alt="Parent">
+                            <img src="<?= BASE_URL ?>/assets/unknown_woman.jpg" alt="Parent">
 
                             <div class="testimonial-info">
 
@@ -1163,7 +1165,7 @@
 
                         <div class="testimonial-header">
 
-                            <img src="assets/unknown_man.jpg" alt="Parent">
+                            <img src="<?= BASE_URL ?>/assets/unknown_man.jpg" alt="Parent">
 
                             <div class="testimonial-info">
 
@@ -1196,7 +1198,7 @@
 
                         <div class="testimonial-header">
 
-                            <img src="assets/unknown_woman.jpg" alt="Parent">
+                            <img src="<?= BASE_URL ?>/assets/unknown_woman.jpg" alt="Parent">
 
                             <div class="testimonial-info">
 
@@ -1229,7 +1231,7 @@
 
                         <div class="testimonial-header">
 
-                            <img src="assets/unknown_man.jpg" alt="Parent">
+                            <img src="<?= BASE_URL ?>/assets/unknown_man.jpg" alt="Parent">
 
                             <div class="testimonial-info">
 
@@ -1262,7 +1264,7 @@
 
                         <div class="testimonial-header">
 
-                            <img src="assets/unknown_woman.jpg alt="Parent">
+                            <img src="<?= BASE_URL ?>/assets/unknown_woman.jpg alt="Parent">
 
                             <div class="testimonial-info">
 
@@ -1546,7 +1548,7 @@
 
                 title:"Personalised Learning",
 
-                image:"assets/classroom5.jpeg",
+                image:"<?= BASE_URL ?>/assets/classroom5.jpeg",
 
                 description:`We believe every child has the potential to achieve extraordinary things when given the freedom to explore, express and challenge themselves. Whether your child is sporty, musical, dramatic or creative, there is something to nurture every talent.`
 
@@ -1556,7 +1558,7 @@
 
                 title:"Preparing for the Future",
 
-                image:"assets/classroom6.jpeg",
+                image:"<?= BASE_URL ?>/assets/classroom6.jpeg",
 
                 description:`We strongly believe that education should prepare every student for life beyond school. We help students develop leadership, confidence, creativity and practical skills to become future-ready citizens.`
 
@@ -1566,7 +1568,7 @@
 
                 title:"Wellbeing",
 
-                image:"assets/classroom7.jpeg",
+                image:"<?= BASE_URL ?>/assets/classroom7.jpeg",
 
                 description:`Students grow best in a safe, happy and caring environment. We focus on physical, emotional and mental wellbeing through guidance, counselling and a positive school culture.`
 
@@ -1576,7 +1578,7 @@
 
                 title:"Student Experience",
 
-                image:"assets/classroom8.jpeg",
+                image:"<?= BASE_URL ?>/assets/classroom8.jpeg",
 
                 description:`Every child experiences exciting learning through activities, events, clubs, sports and collaborative projects. Our vibrant campus life creates memorable experiences every day.`
 
@@ -1586,7 +1588,7 @@
 
                 title:"Family First",
 
-                image:"assets/classroom9.jpeg",
+                image:"<?= BASE_URL ?>/assets/classroom9.jpeg",
 
                 description:`Parents are our strongest partners. Through regular communication, meetings and school events, we work together to ensure every child reaches their full potential.`
 

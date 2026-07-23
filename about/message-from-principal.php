@@ -1,4 +1,7 @@
 <?php
+
+    require_once '../config.php';
+
     $pageTitle = "Message from principal | Akanksha Public School";
 ?>
 
@@ -11,7 +14,7 @@
     <?php @include('../includes/header.php'); ?>
 
     <!-- hero css cdn -->
-    <link rel="stylesheet" href="/akanshapublicschool/css/message-from-principal.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/css/message-from-principal.css">
 
 
   </head>
@@ -36,7 +39,7 @@
 
         <div class="banner-overlay"></div>
 
-        <img src="/akanshapublicschool/assets/banners/message-from-principal.png" alt="Overview Banner">
+        <img src="<?= BASE_URL ?>/assets/banners/message-from-principal.png" alt="Overview Banner">
 
         <div class="banner-content container">
 
@@ -46,7 +49,7 @@
 
             <div class="breadcrumb">
 
-                <a href="/akanshapublicschool/index.php">
+                <a href="<?= BASE_URL ?>/index.php">
                     Home
                 </a>
 
@@ -81,7 +84,7 @@
 
             <!-- Left Image -->
             <div class="principal-image">
-                <img src="/akanshapublicschool/assets/members/principal2.jpeg" alt="Principal">
+                <img src="<?= BASE_URL ?>/assets/members/principal2.jpeg" alt="Principal">
             </div>
 
             <!-- Right Content -->
@@ -155,7 +158,7 @@
     <!-- swiper js script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="/akanshapublicschool/js/index.js"></script>
+    <script src="<?= BASE_URL ?>/js/index.js"></script>
 
 
 

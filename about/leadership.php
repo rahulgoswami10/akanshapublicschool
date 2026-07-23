@@ -1,4 +1,7 @@
 <?php
+
+    require_once '../config.php';
+
     $pageTitle = "Our leadership | Akanksha Public School";
 ?>
 
@@ -11,7 +14,7 @@
     <?php @include('../includes/header.php'); ?>
 
     <!-- hero css cdn -->
-    <link rel="stylesheet" href="/akanshapublicschool/css/leadership.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/css/leadership.css">
 
 
   </head>
