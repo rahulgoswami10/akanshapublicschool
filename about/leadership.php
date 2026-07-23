@@ -39,7 +39,7 @@
 
         <div class="banner-overlay"></div>
 
-        <img src="/akanshapublicschool/assets/banners/leadership.png" alt="Overview Banner">
+        <img src="<?= BASE_URL ?>/assets/banners/leadership.png" alt="Overview Banner">
 
         <div class="banner-content container">
 
@@ -49,7 +49,7 @@
 
             <div class="breadcrumb">
 
-                <a href="/akanshapublicschool/index.php">
+                <a href="<?= BASE_URL ?>/index.php">
                     Home
                 </a>
 
@@ -106,7 +106,7 @@
                 <div class="leaderCard">
 
                     <div class="leaderImage">
-                        <img src="/akanshapublicschool/assets/members/principal1.jpeg" alt="Principal">
+                        <img src="<?= BASE_URL ?>/assets/members/principal1.jpeg" alt="Principal">
                     </div>
 
                     <div class="leaderContent">
@@ -138,7 +138,7 @@
                 <div class="leaderCard">
 
                     <div class="leaderImage">
-                        <img src="/akanshapublicschool/assets/members/principal2.jpeg" alt="Vice Principal">
+                        <img src="<?= BASE_URL ?>/assets/members/principal2.jpeg" alt="Vice Principal">
                     </div>
 
                     <div class="leaderContent">
@@ -170,7 +170,7 @@
                 <div class="leaderCard">
 
                     <div class="leaderImage">
-                        <img src="/akanshapublicschool/assets/members/director.png" alt="Director">
+                        <img src="<?= BASE_URL ?>/assets/members/director.png" alt="Director">
                     </div>
 
                     <div class="leaderContent">
@@ -230,7 +230,7 @@
     <!-- swiper js script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="/akanshapublicschool/js/index.js"></script>
+    <script src="<?= BASE_URL ?>/js/index.js"></script>
 
 
 
