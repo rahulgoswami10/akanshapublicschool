@@ -1421,8 +1421,14 @@ header.sticky .nav{
 
     .dropdown li a{
 
-        padding:12px 15px 12px 30px;
+        /* padding:12px 15px 12px 30px; */
+        padding:12px 20px;
 
+    }
+
+    .dropdown li:not(:last-child){
+        /* border-bottom:1px solid #f0f0f0; */
+        border-bottom:1px solid #a5a5a5;
     }
 
     .menu > li{

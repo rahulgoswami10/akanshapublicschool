@@ -18,7 +18,7 @@
 
                 <a href="#" class="footer-logo">
 
-                    <img src="assets/logo.png" alt="Akansha Public School Logo">
+                    <img src="/akanshapublicschool/assets/logo.png" alt="Akansha Public School Logo">
 
                     <h2>Akansha Public School</h2>
 
@@ -184,8 +184,8 @@
 <!--========================= FOOTER ENDS =========================-->
 
 <!-- main js script -->
-<script src="js/main.js"></script>
+<!-- <script src="/akanshapublicschooljs/index.js"></script> -->
 
 <!-- contact widget js -->
-<script src="js/contact-widget.js"></script>
+<script src="/akanshapublicschool/js/contact-widget.js"></script>
 

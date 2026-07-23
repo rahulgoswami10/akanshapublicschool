@@ -1,9 +1,20 @@
+<?php
+    $pageTitle = "Home | Akanksha Public School";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
    
+  <head>
+    
+    <!--====================== Header =======================-->
+    <?php @include('includes/header.php'); ?>
 
-  <?php @include('includes/header.php'); ?>
-  <link rel="stylesheet" href="css/hero.css">
+    <!-- hero css cdn -->
+    <link rel="stylesheet" href="css/hero.css">
+
+  </head>
+
 
    <body>
 
@@ -1311,6 +1322,9 @@
     <!-- swiper js script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- main js script -->
+    <script src="/akanshapublicschool/js/index.js"></script>
+
     <script>
         /*========== FACILITIES SWIPER ==========*/
         const facilitiesSwiper = new Swiper(".facilitiesSwiper", {
@@ -1365,180 +1379,103 @@
         });
     </script>
 
-    <!-- main js script -->
-    <!-- <script src="js/main.js"></script> -->
-
 
     <script>
-    /*==================================== HERO SLIDER ====================================*/
+        /*==================================== HERO SLIDER ====================================*/
 
-    const slides = document.querySelectorAll(".slide");
-    const dots = document.querySelectorAll(".dot");
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
 
-    const nextBtn = document.getElementById("next");
-    const prevBtn = document.getElementById("prev");
+        const nextBtn = document.getElementById("next");
+        const prevBtn = document.getElementById("prev");
 
-    let currentSlide = 0;
+        let currentSlide = 0;
 
-    // function showSlide(index){
+        // function showSlide(index){
 
-    //     slides.forEach((slide)=>{
-    //         slide.classList.remove("active");
-    //     });
+        //     slides.forEach((slide)=>{
+        //         slide.classList.remove("active");
+        //     });
 
-    //     slides[index].classList.add("active");
+        //     slides[index].classList.add("active");
 
-    // }
+        // }
 
-    function showSlide(index){
+        function showSlide(index){
 
-        slides.forEach(slide=>{
+            slides.forEach(slide=>{
 
-            slide.classList.remove("active");
+                slide.classList.remove("active");
 
-        });
+            });
 
-        dots.forEach(dot=>{
+            dots.forEach(dot=>{
 
-            dot.classList.remove("active");
+                dot.classList.remove("active");
 
-            const progress=dot.querySelector(".progress");
+                const progress=dot.querySelector(".progress");
 
-            progress.style.animation="none";
+                progress.style.animation="none";
 
-            progress.offsetHeight;
+                progress.offsetHeight;
 
-            progress.style.animation=null;
+                progress.style.animation=null;
 
-        });
+            });
 
-        slides[index].classList.add("active");
+            slides[index].classList.add("active");
 
-        dots[index].classList.add("active");
+            dots[index].classList.add("active");
 
-    }
-
-    // Next Slide
-    function nextSlide(){
-
-        currentSlide++;
-
-        if(currentSlide >= slides.length){
-            currentSlide = 0;
         }
 
-        showSlide(currentSlide);
+        // Next Slide
+        function nextSlide(){
 
-    }
+            currentSlide++;
 
-    // Previous Slide
-    function prevSlide(){
-
-        currentSlide--;
-
-        if(currentSlide < 0){
-            currentSlide = slides.length - 1;
-        }
-
-        showSlide(currentSlide);
-
-    }
-
-    nextBtn.addEventListener("click",nextSlide);
-
-    prevBtn.addEventListener("click",prevSlide);
-
-    // Auto Slider
-
-    setInterval(nextSlide,5000);
-
-    dots.forEach((dot,index)=>{
-
-        dot.addEventListener("click",()=>{
-
-            currentSlide=index;
+            if(currentSlide >= slides.length){
+                currentSlide = 0;
+            }
 
             showSlide(currentSlide);
 
-        });
+        }
 
-    });
+        // Previous Slide
+        function prevSlide(){
 
+            currentSlide--;
 
-    /*==================================== STICKY HEADER ====================================*/
-    const header = document.querySelector("header");
+            if(currentSlide < 0){
+                currentSlide = slides.length - 1;
+            }
 
-    window.addEventListener("scroll",()=>{
-
-        if(window.scrollY > 60){
-
-            header.classList.add("sticky");
-
-        }else{
-
-            header.classList.remove("sticky");
+            showSlide(currentSlide);
 
         }
 
-    });
+        nextBtn.addEventListener("click",nextSlide);
 
+        prevBtn.addEventListener("click",prevSlide);
 
+        // Auto Slider
 
-    /*==================================== MOBILE MENU ====================================*/
-    // const menuBtn = document.querySelector(".menu-btn");
-    // const menu = document.querySelector(".menu");
+        setInterval(nextSlide,5000);
 
-    // menuBtn.addEventListener("click",()=>{
+        dots.forEach((dot,index)=>{
 
-    //     menu.classList.toggle("show");
+            dot.addEventListener("click",()=>{
 
-    // });
+                currentSlide=index;
 
+                showSlide(currentSlide);
 
-    /*==================================== MOBILE MENU ====================================*/
-
-    const menuBtn = document.querySelector(".menu-btn");
-    const menu = document.querySelector(".menu");
-
-    menuBtn.addEventListener("click", () => {
-
-        menu.classList.toggle("show");
-
-    });
-
-
-    /*==================================== MOBILE DROPDOWN ====================================*/
-
-    const dropdownLinks = document.querySelectorAll(".has-dropdown > a");
-
-    dropdownLinks.forEach(link => {
-
-        link.addEventListener("click", function (e) {
-
-            if (window.innerWidth <= 768) {
-
-                e.preventDefault();
-
-                const parent = this.parentElement;
-
-                // Ek hi dropdown open rahe
-                document.querySelectorAll(".has-dropdown").forEach(item => {
-
-                    if (item !== parent) {
-
-                        item.classList.remove("active");
-
-                    }
-
-                });
-
-                parent.classList.toggle("active");
-
-            }
+            });
 
         });
 
-    });
+
     </script>
 
 
@@ -1603,163 +1540,125 @@
     <!-- ============================== WHY SCHOOL TABS =============================== -->
     <script>
 
-    const tabData = {
+        const tabData = {
 
-        learning:{
+            learning:{
 
-            title:"Personalised Learning",
+                title:"Personalised Learning",
 
-            image:"assets/classroom5.jpeg",
+                image:"assets/classroom5.jpeg",
 
-            description:`We believe every child has the potential to achieve extraordinary things when given the freedom to explore, express and challenge themselves. Whether your child is sporty, musical, dramatic or creative, there is something to nurture every talent.`
+                description:`We believe every child has the potential to achieve extraordinary things when given the freedom to explore, express and challenge themselves. Whether your child is sporty, musical, dramatic or creative, there is something to nurture every talent.`
 
-        },
+            },
 
-        future:{
+            future:{
 
-            title:"Preparing for the Future",
+                title:"Preparing for the Future",
 
-            image:"assets/classroom6.jpeg",
+                image:"assets/classroom6.jpeg",
 
-            description:`We strongly believe that education should prepare every student for life beyond school. We help students develop leadership, confidence, creativity and practical skills to become future-ready citizens.`
+                description:`We strongly believe that education should prepare every student for life beyond school. We help students develop leadership, confidence, creativity and practical skills to become future-ready citizens.`
 
-        },
+            },
 
-        wellbeing:{
+            wellbeing:{
 
-            title:"Wellbeing",
+                title:"Wellbeing",
 
-            image:"assets/classroom7.jpeg",
+                image:"assets/classroom7.jpeg",
 
-            description:`Students grow best in a safe, happy and caring environment. We focus on physical, emotional and mental wellbeing through guidance, counselling and a positive school culture.`
+                description:`Students grow best in a safe, happy and caring environment. We focus on physical, emotional and mental wellbeing through guidance, counselling and a positive school culture.`
 
-        },
+            },
 
-        experience:{
+            experience:{
 
-            title:"Student Experience",
+                title:"Student Experience",
 
-            image:"assets/classroom8.jpeg",
+                image:"assets/classroom8.jpeg",
 
-            description:`Every child experiences exciting learning through activities, events, clubs, sports and collaborative projects. Our vibrant campus life creates memorable experiences every day.`
+                description:`Every child experiences exciting learning through activities, events, clubs, sports and collaborative projects. Our vibrant campus life creates memorable experiences every day.`
 
-        },
+            },
 
-        family:{
+            family:{
 
-            title:"Family First",
+                title:"Family First",
 
-            image:"assets/classroom9.jpeg",
+                image:"assets/classroom9.jpeg",
 
-            description:`Parents are our strongest partners. Through regular communication, meetings and school events, we work together to ensure every child reaches their full potential.`
-
-        }
-
-    };
-
-
-
-    const buttons = document.querySelectorAll(".tab-btn");
-
-    const title = document.getElementById("content-title");
-
-    const description = document.getElementById("content-description");
-
-    const image = document.getElementById("content-image");
-
-    const content = document.querySelector(".tab-content");
-
-    const imageBox = document.querySelector(".tab-image");
-
-
-
-    buttons.forEach(button=>{
-
-        button.addEventListener("click",()=>{
-
-            if(button.classList.contains("active")) return;
-
-            buttons.forEach(btn=>btn.classList.remove("active"));
-
-            button.classList.add("active");
-
-            const tab = button.dataset.tab;
-
-            /*=========================
-                Fade Out
-            ==========================*/
-
-            content.style.opacity="0";
-            content.style.transform="translateY(30px)";
-
-            imageBox.style.opacity="0";
-            imageBox.style.transform="scale(.95)";
-
-
-
-            setTimeout(()=>{
-
-                title.textContent=tabData[tab].title;
-
-                description.textContent=tabData[tab].description;
-
-                image.src=tabData[tab].image;
-
-                image.alt=tabData[tab].title;
-
-                /*=========================
-                    Fade In
-                ==========================*/
-
-                content.style.opacity="1";
-                content.style.transform="translateY(0)";
-
-                imageBox.style.opacity="1";
-                imageBox.style.transform="scale(1)";
-
-            },300);
-
-        });
-
-    });
-    </script>
-
-    
-    <script>
-
-        // SCROLL TO TOP
-        const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-        window.addEventListener("scroll", () => {
-
-            if (window.scrollY > 300) {
-
-                scrollTopBtn.classList.add("show");
-
-            } 
-            
-            else {
-
-                scrollTopBtn.classList.remove("show");
+                description:`Parents are our strongest partners. Through regular communication, meetings and school events, we work together to ensure every child reaches their full potential.`
 
             }
 
-        });
+        };
 
 
-        // SMOOTH SCROLL TO TOP
-        scrollTopBtn.addEventListener("click", () => {
 
-            window.scrollTo({
+        const buttons = document.querySelectorAll(".tab-btn");
 
-                top: 0,
+        const title = document.getElementById("content-title");
 
-                behavior: "smooth"
+        const description = document.getElementById("content-description");
+
+        const image = document.getElementById("content-image");
+
+        const content = document.querySelector(".tab-content");
+
+        const imageBox = document.querySelector(".tab-image");
+
+
+
+        buttons.forEach(button=>{
+
+            button.addEventListener("click",()=>{
+
+                if(button.classList.contains("active")) return;
+
+                buttons.forEach(btn=>btn.classList.remove("active"));
+
+                button.classList.add("active");
+
+                const tab = button.dataset.tab;
+
+                /*=========================
+                    Fade Out
+                ==========================*/
+
+                content.style.opacity="0";
+                content.style.transform="translateY(30px)";
+
+                imageBox.style.opacity="0";
+                imageBox.style.transform="scale(.95)";
+
+
+
+                setTimeout(()=>{
+
+                    title.textContent=tabData[tab].title;
+
+                    description.textContent=tabData[tab].description;
+
+                    image.src=tabData[tab].image;
+
+                    image.alt=tabData[tab].title;
+
+                    /*=========================
+                        Fade In
+                    ==========================*/
+
+                    content.style.opacity="1";
+                    content.style.transform="translateY(0)";
+
+                    imageBox.style.opacity="1";
+                    imageBox.style.transform="scale(1)";
+
+                },300);
 
             });
 
         });
-
     </script>
 
 
