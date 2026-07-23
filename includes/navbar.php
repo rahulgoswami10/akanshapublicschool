@@ -4,11 +4,11 @@
     <div class="container nav">
 
         <!-- nav logo -->
-        <div class="logo">
+        <a href="<?= BASE_URL ?>/index.php" class="logo">
             <!-- <img src="assets/logo.png"> -->
             <img src="<?= BASE_URL ?>/assets/logo.png">
             <span>Akanksha Public School</span> 
-        </div>
+        </a>
 
         <!-- nav menu links -->
         <ul class="menu">
