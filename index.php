@@ -1325,7 +1325,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- main js script -->
-    <script src="/akanshapublicschool/js/index.js"></script>
+    <script src="<?= BASE_URL ?>/js/index.js"></script>
 
     <script>
         /*========== FACILITIES SWIPER ==========*/
