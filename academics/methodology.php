@@ -2,7 +2,7 @@
 
     require_once '../config.php';
 
-    $pageTitle = "Curriculum | Akanksha Public School";
+    $pageTitle = "Learning Methodologies | Akanksha Public School";
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
     <?php @include('../includes/header.php'); ?>
 
     <!-- css cdn -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>/css/curriculum.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/css/methodologies.css">
 
 
   </head>
@@ -45,7 +45,7 @@
 
             <!-- <span>Know Us Better</span> -->
 
-            <h1>Curriculum</h1>
+            <h1>Learning Methodologies</h1>
 
             <div class="breadcrumb">
 
@@ -65,7 +65,7 @@
                     <i class="fa-solid fa-angle-right"></i>
                 </span>
 
-                <p>Curriculum</p>
+                <p>Learning Methodologies</p>
 
             </div>
 
@@ -76,9 +76,9 @@
 
 
 
-
+    
     <!--==================== CURRICULUM SECTION ====================-->
-    <section class="curriculum-section">
+    <section class="methodology-section">
 
         <div class="section-heading">
 

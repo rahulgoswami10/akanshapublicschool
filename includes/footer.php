@@ -16,7 +16,7 @@
             <!--================ Left Info =================-->
             <div class="footer-about">
 
-                <a href="#" class="footer-logo">
+                <a href="<?= BASE_URL ?>/index" class="footer-logo">
 
                     <img src="<?= BASE_URL ?>/assets/logo.png" alt="Akansha Public School Logo">
 

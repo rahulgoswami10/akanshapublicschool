@@ -5,7 +5,7 @@
     <div class="container nav">
 
         <!-- nav logo -->
-        <a href="<?= BASE_URL ?>/index.php" class="logo">
+        <a href="<?= BASE_URL ?>/index" class="logo">
             <!-- <img src="assets/logo.png"> -->
             <img src="<?= BASE_URL ?>/assets/logo.png">
             <span>Akanksha Public School</span> 
@@ -14,7 +14,7 @@
         <!-- nav menu links -->
         <ul class="menu">
             <!-- home -->
-            <li><a href="<?= BASE_URL ?>/index.php">Home</a></li>
+            <li><a href="<?= BASE_URL ?>/index">Home</a></li>
 
             <!-- about -->
             <li class="has-dropdown">
@@ -22,12 +22,12 @@
 
                 <ul class="dropdown">
 
-                    <li><a href="<?= BASE_URL ?>/about/overview.php">Overview</a></li>
-                    <li><a href="<?= BASE_URL ?>/about/message-from-principal.php">Principal's Message</a></li>
-                    <li><a href="<?= BASE_URL ?>/about/message-from-director.php">Director's Message</a></li>
-                    <li><a href="<?= BASE_URL ?>/about/message-from-trust.php">Trustee's Message</a></li>
-                    <li><a href="<?= BASE_URL ?>/about/vision-and-mission.php">Vision & Mission</a></li>
-                    <li><a href="<?= BASE_URL ?>/about/leadership.php">Our Leadership</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/overview">Overview</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/message-from-principal">Principal's Message</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/message-from-director">Director's Message</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/message-from-trust">Trustee's Message</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/vision-and-mission">Vision & Mission</a></li>
+                    <li><a href="<?= BASE_URL ?>/about/leadership">Our Leadership</a></li>
 
                 </ul>
             </li>
@@ -38,11 +38,11 @@
 
                 <ul class="dropdown">
 
-                    <li><a href="<?= BASE_URL ?>/academics/teachers.php">Our Teachers</a></li>
-                    <li><a href="<?= BASE_URL ?>/academics/values.php">Our Values</a></li>
-                    <li><a href="<?= BASE_URL ?>/academics/classroom.php">Beyond Classroom</a></li>
-                    <li><a href="<?= BASE_URL ?>/academics/curriculum.php">Curriculum</a></li>
-                    <li><a href="#">Learning Methodology</a></li>
+                    <li><a href="<?= BASE_URL ?>/academics/teachers">Our Teachers</a></li>
+                    <li><a href="<?= BASE_URL ?>/academics/values">Our Values</a></li>
+                    <li><a href="<?= BASE_URL ?>/academics/beyond-classroom">Beyond Classroom</a></li>
+                    <li><a href="<?= BASE_URL ?>/academics/curriculum">Curriculum</a></li>
+                    <li><a href="<?= BASE_URL ?>/academics/methodology">Learning Methodology</a></li>
 
                 </ul>
         

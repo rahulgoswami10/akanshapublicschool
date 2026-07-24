@@ -1,0 +1,30 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    RewriteBase /akanshapublicschool/
+
+    # -------------------------------------------------
+    # Don't rewrite existing files or directories
+    # -------------------------------------------------
+
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # -------------------------------------------------
+    # Hide .php extension
+    # Example:
+    # /about  -> about.php
+    # /contact -> contact.php
+    # -------------------------------------------------
+
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.+?)/?$ $1.php [L,QSA]
+
+    # -------------------------------------------------
+    # Homepage
+    # -------------------------------------------------
+
+    RewriteRule ^$ index.php [L]
+
+</IfModule>

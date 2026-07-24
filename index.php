@@ -58,11 +58,11 @@
 
                         <div class="hero-buttons">
 
-                            <a href="admission.php" class="btn-primary">
+                            <a href="<?= BASE_URL ?>/contact/contact" class="btn-primary">
                                 Apply Now
                             </a>
 
-                            <a href="about.php" class="btn-secondary">
+                            <a href="<?= BASE_URL ?>/about/overview" class="btn-secondary">
                                 Explore Campus <i class="fa-solid fa-arrow-right-long"></i>
                             </a>
 

@@ -49,7 +49,7 @@
 
             <div class="breadcrumb">
 
-                <a href="<?= BASE_URL ?>/index.php">
+                <a href="<?= BASE_URL ?>/index">
                     Home
                 </a>
 
